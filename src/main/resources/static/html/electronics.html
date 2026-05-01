@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneKart - Electronics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<nav id="main-nav">
+    <a href="index.html" class="nav-logo" aria-label="OneKart home">OneKart</a>
+    <ul class="nav-links" role="list">
+        <li><a href="new.html">New In</a></li>
+        <li><a href="women.html">Women</a></li>
+        <li><a href="men.html">Men</a></li>
+        <li><a href="electronics.html" class="active">Electronics</a></li>
+        <li><a href="sale.html">Sale</a></li>
+    </ul>
+    <div class="nav-actions">
+        <label class="nav-icon" for="search-toggle" role="button" tabindex="0" aria-label="Open search">
+            <img
+                    src="https://cdn-icons-png.flaticon.com/512/54/54481.png"
+                    width="18"
+                    height="18"
+                    alt="Search"
+            />
+        </label>
+        <button class="nav-icon" id="account-btn" aria-label="Account">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+            </svg>
+        </button>
+        <button class="nav-icon" aria-label="Shopping bag">
+            <img
+                    src="https://cdn-icons-png.flaticon.com/512/263/263142.png"
+                    width="18"
+                    height="18"
+                    alt="Shopping bag"
+            />
+        </button>
+    </div>
+</nav>
+
+<div class="nav-mobile-drawer" id="nav-mobile-drawer">
+    <a href="new.html">New In</a>
+    <a href="women.html">Women</a>
+    <a href="men.html">Men</a>
+    <a href="electronics.html" class="active">Electronics</a>
+    <a href="sale.html">Sale</a>
+</div>
+
+<div class="search-overlay" id="search-overlay">
+    <label class="search-overlay-bg" for="search-toggle" aria-label="Close search"></label>
+    <div class="search-box">
+        <input class="search-input" type="search" placeholder="Search products..." autocomplete="off" aria-label="Search products">
+    </div>
+</div>
+
+<main class="catalog-main" aria-label="Electronics page content">
+    <section class="catalog-hero container" aria-label="Electronics hero">
+        <p class="catalog-eyebrow">Trending Now</p>
+        <h1>Electronics Trending Hub</h1>
+        <p>Characterized into practical tech sections so users can shop by need: communication, work, and entertainment.</p>
+    </section>
+
+    <section class="catalog-section container" aria-label="Smartphones">
+        <div class="catalog-head">
+            <h2>Flagship Smartphones</h2>
+            <p>Top-tier cameras, flagship processors, and premium displays for everyday power users.</p>
+        </div>
+        <div class="catalog-grid">
+            <article class="catalog-card">
+                <a href="iphone.html">
+                    <div class="catalog-media"><img src="https://www.myimaginestore.com/media/catalog/product/cache/4a48ac28cbb6e9c41470e5be5a6d3043/i/p/iphone_17_black_pdp_image_position_1__en-in.jpg" alt="Apple iPhone 17"></div>
+                    <div class="catalog-info"><h3>Apple iPhone 17</h3><p class="catalog-meta">Electronics</p><p class="catalog-price">Rs 78,000</p></div>
+                </a>
+            </article>
+            <article class="catalog-card">
+                <a href="#">
+                    <div class="catalog-media"><img src="https://images.samsung.com/in/smartphones/galaxy-s25/images/galaxy-s25-highlights-color-icyblue.jpg" alt="Samsung Galaxy S25"></div>
+                    <div class="catalog-info"><h3>Samsung Galaxy S25</h3><p class="catalog-meta">Electronics</p><p class="catalog-price">Rs 74,999</p></div>
+                </a>
+            </article>
+            <article class="catalog-card">
+                <a href="#">
+                    <div class="catalog-media"><img src="https://lh3.googleusercontent.com/Nu-G-z3X6-G7HlnXjbxYk4jI8ixRTLNK9EB8pcVBOE1aSMmTluwWfsMBgJxMqJD_Qk9KhUoS6EwdFMQMgjl-ZX8hh6yLqIWD" alt="Google Pixel 9 Pro"></div>
+                    <div class="catalog-info"><h3>Google Pixel 9 Pro</h3><p class="catalog-meta">Electronics</p><p class="catalog-price">Rs 1,09,999</p></div>
+                </a>
+            </article>
+            <article class="catalog-card">
+                <a href="#">
+                    <div class="catalog-media"><img src="https://image01.oneplus.net/ebp/202312/07/1-m00-52-45-rblaqwvxd8wab2mlaadqk5mfufy562.png" alt="OnePlus 12"></div>
+                    <div class="catalog-info"><h3>OnePlus 12</h3><p class="catalog-meta">Electronics</p><p class="catalog-price">Rs 64,999</p></div>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <section class="catalog-section container" aria-label="Laptops and tablets">
+        <div class="catalog-head">
+            <h2>Laptops &amp; Tablets</h2>
+            <p>Portable performance devices for creators, students, and professionals on the move.</p>
+        </div>
+        <div class="catalog-grid">
+            <article class="catalog-card">
+                <a href="#">
+                    <div class="catalog-media"><img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/macbook-air-midnight-config-20220606?wid=820&hei=498&fmt=jpeg&qlt=90&.v=1654122880566" alt="Apple MacBook Air M3"></div>
+                    <div class="catalog-info"><h3>Apple MacBook Air M3</h3><p class="catalog-meta">Laptops</p><p class="catalog-price">Rs 1,14,900</p></div>
+                </a>
+            </article>
+            <article class="catalog-card">
+                <a href="#">
+                    <div class="catalog-media"><img src="https://dlcdnwebimgs.asus.com/files/media/E5D855B0-6E13-4CA6-8DBD-F7CDFE9C89DA/v1/img/kv.jpg" alt="ASUS ROG Zephyrus G14"></div>
+                    <div class="catalog-info"><h3>ASUS ROG Zephyrus G14</h3><p class="catalog-meta">Laptops</p><p class="catalog-price">Rs 1,59,990</p></div>
+                </a>
+            </article>
+            <article class="catalog-card">
+                <a href="#">
+                    <div class="catalog-media"><img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/ipad-pro-finish-unselect-gallery-1-202405?wid=5120&hei=2880&fmt=p-jpg&qlt=95&.v=1713920820183" alt="iPad Pro M4 11 inch"></div>
+                    <div class="catalog-info"><h3>iPad Pro M4 11&quot;</h3><p class="catalog-meta">Tablets</p><p class="catalog-price">Rs 99,900</p></div>
+                </a>
+            </article>
+            <article class="catalog-card">
+                <a href="#">
+                    <div class="catalog-media"><img src="https://images.samsung.com/in/tablets/galaxy-tab-s9/images/galaxy-tab-s9-highlights-design-beige.jpg" alt="Samsung Galaxy Tab S9"></div>
+                    <div class="catalog-info"><h3>Samsung Galaxy Tab S9</h3><p class="catalog-meta">Tablets</p><p class="catalog-price">Rs 72,999</p></div>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <section class="catalog-section container" aria-label="Gaming audio and smart devices">
+        <div class="catalog-head">
+            <h2>Gaming, Audio &amp; Smart Devices</h2>
+            <p>Immersive devices built for home entertainment, portable audio, and connected living.</p>
+        </div>
+        <div class="catalog-grid">
+            <article class="catalog-card">
+                <a href="#">
+                    <div class="catalog-media"><img src="https://gmedia.playstation.com/is/image/SIEPDC/ps5-slim-disc-edition-white-01-en-14sep23?$native--t$" alt="PlayStation 5 Slim"></div>
+                    <div class="catalog-info"><h3>PlayStation 5 Slim</h3><p class="catalog-meta">Gaming</p><p class="catalog-price">Rs 54,990</p></div>
+                </a>
+            </article>
+            <article class="catalog-card">
+                <a href="#">
+                    <div class="catalog-media"><img src="https://www.bhphotovideo.com/images/images2500x2500/sony_wh_1000xm5_b_wh_1000xm5_wireless_industry_leading_noise_canceling_1662885.jpg" alt="Sony WH-1000XM5"></div>
+                    <div class="catalog-info"><h3>Sony WH-1000XM5</h3><p class="catalog-meta">Audio</p><p class="catalog-price">Rs 29,990</p></div>
+                </a>
+            </article>
+            <article class="catalog-card">
+                <a href="#">
+                    <div class="catalog-media"><img src="https://www.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw3e8ef82c/JBL_CHARGE5_SQUAD_012_x1_1605x1605px.png?sw=592&sh=592&sm=fit&sfrm=png" alt="JBL Charge 5"></div>
+                    <div class="catalog-info"><h3>JBL Charge 5</h3><p class="catalog-meta">Audio</p><p class="catalog-price">Rs 16,999</p></div>
+                </a>
+            </article>
+            <article class="catalog-card">
+                <a href="#">
+                    <div class="catalog-media"><img src="https://dji-official-fe.djicdn.com/dps/5c88cfcc1a5b3ee4faeadb4abca80aee.png" alt="DJI Mini 4 Pro"></div>
+                    <div class="catalog-info"><h3>DJI Mini 4 Pro</h3><p class="catalog-meta">Drones</p><p class="catalog-price">Rs 74,999</p></div>
+                </a>
+            </article>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">OneKart</div>
+                <p>Your one-stop online store for fashion, electronics, and everyday essentials with secure checkout and fast delivery.</p>
+            </div>
+            <div class="footer-col">
+                <p class="footer-col-title">Shop</p>
+                <ul>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Women's Collection</a></li>
+                    <li><a href="#">Men's Collection</a></li>
+                    <li><a href="#">Accessories</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <p class="footer-col-title">Help</p>
+                <ul>
+                    <li><a href="#">FAQ &amp; Contact</a></li>
+                    <li><a href="#">Shipping &amp; Returns</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">Track Order</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>&copy; 2026 OneKart. All rights reserved.</span>
+        <div>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+    </div>
+    </div>
+</footer>
+<script>
+    window.onload = function () {
+        checkSession();
+    };
+
+    async function checkSession() {
+        try {
+            const response = await fetch("/api/session-check", {
+                credentials: "include"   // sends JSESSIONID cookie if it exists
+            });
+
+            const data = await response.json();
+            const accountBtn = document.getElementById("account-btn");
+
+            if (!data.loggedIn) {
+                // no session found → redirect to the login page
+                window.location.href = "login.html";
+            }
+            // else: session → stay on this page
+            else {
+                // Show user's name on the account button
+                accountBtn.innerHTML = `
+                    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+                    </svg>
+                    <span style="font-size:12px; letter-spacing:0.05em;">
+                    ${data.name}`;
+                accountBtn.onclick = () => window.location.href = "account.html";
+            }
+        } catch (error) {
+            // Server not reachable or endpoint error — stay on page, do nothing
+            console.error("Session check failed:", error);
+        }
+    }
+</script>
+</body>
+</html>
+
+
+
+

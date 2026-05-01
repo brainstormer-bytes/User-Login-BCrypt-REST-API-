@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneKart - Curated Fashion</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<nav id="main-nav">
+    <a href="index.html" class="nav-logo" aria-label="OneKart home">OneKart</a>
+    <ul class="nav-links" role="list">
+        <li><a href="new.html">New In</a></li>
+        <li><a href="women.html">Women</a></li>
+        <li><a href="men.html">Men</a></li>
+        <li><a href="electronics.html">Electronics</a></li>
+        <li><a href="sale.html">Sale</a></li>
+    </ul>
+    <div class="nav-actions">
+        <label class="nav-icon" for="search-toggle" role="button" tabindex="0" aria-label="Open search">
+            <img
+                    src="https://cdn-icons-png.flaticon.com/512/54/54481.png"
+                    width="18"
+                    height="18"
+                    alt="Search"
+            />
+        </label>
+        <button class="nav-icon" id = "account-btn" aria-label="Account">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+            </svg>
+        </button>
+        <button class="nav-icon" aria-label="Shopping bag">
+            <img
+                    src="https://cdn-icons-png.flaticon.com/512/263/263142.png"
+                    width="18"
+                    height="18"
+                    alt="Shopping bag"
+            />
+        </button>
+    </div>
+</nav>
+
+<div class="nav-mobile-drawer" id="nav-mobile-drawer">
+    <a href="new.html">New In</a>
+    <a href="women.html">Women</a>
+    <a href="men.html">Men</a>
+    <a href="electronics.html">Electronics</a>
+    <a href="sale.html">Sale</a>
+</div>
+
+<div class="search-overlay" id="search-overlay">
+    <label class="search-overlay-bg" for="search-toggle" aria-label="Close search"></label>
+    <div class="search-box">
+        <input class="search-input" type="search" placeholder="Search products..." autocomplete="off" aria-label="Search products">
+    </div>
+</div>
+
+<main>
+    <section class="hero" aria-label="Hero - Summer Collection">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1577538928305-3807c3993047?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                 alt="" aria-hidden="true" fetchpriority="high" decoding="async" width="1600" height="900">
+            <div class="hero-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-eyebrow">The Summer Loot</p>
+            <h1 class="hero-title"> The Sale  <br> Is HOT!! </h1>
+            <div class="hero-ctas">
+                <a href="" class="btn-hero-primary">SHOP NOWW!!</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-categories" aria-label="Shop by category">
+        <div class="container">
+            <div class="section-header center">
+                <h2>Shop by Category</h2>
+                <p>From runway-inspired fashion to the latest electronics - all curated for you.</p>
+            </div>
+            <div class="category-grid">
+                <a href="women.html" class="category-tile" aria-label="Shop Women">
+                    <img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?w=800&h=1000&fit=crop" alt="" loading="lazy" aria-hidden="true">
+                    <div class="category-label"><h3>Women</h3><span class="explore-link">Explore <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-7-7 7 7-7 7"/></svg></span></div>
+                </a>
+                <a href="men.html" class="category-tile" aria-label="Shop Men">
+                    <img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?w=800&h=1000&fit=crop" alt="" loading="lazy" aria-hidden="true">
+                    <div class="category-label"><h3>Men</h3><span class="explore-link">Explore <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-7-7 7 7-7 7"/></svg></span></div>
+                </a>
+                <a href="electronics.html" class="category-tile" aria-label="Shop Electronics">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&h=1000&fit=crop" alt="" loading="lazy" aria-hidden="true">
+                    <div class="category-label"><h3>Electronics</h3><span class="explore-link">Explore <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-7-7 7 7-7 7"/></svg></span></div>
+                </a>
+                <a href="sale.html" class="category-tile" aria-label="Shop Home">
+                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&h=1000&fit=crop" alt="" loading="lazy" aria-hidden="true">
+                    <div class="category-label"><h3>Home</h3><span class="explore-link">Explore <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-7-7 7 7-7 7"/></svg></span></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-arrivals" aria-label="New arrivals">
+        <div class="container">
+            <div class="section-header split">
+                <div>
+                    <h2>Trending Now</h2>
+
+                </div>
+                <a href="new.html" class="view-all-link">View All <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-7-7 7 7-7 7"/></svg></a>
+            </div>
+            <div class="product-grid">
+
+                <article class="product-card">
+                    <a href="/products/linen-wrap-dress">
+                        <div class="product-img-wrap">
+                            <span class="badge-new">New</span>
+                            <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=600&q=80" alt="Linen Wrap Dress" loading="lazy">
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Linen Wrap Dress</h3>
+                            <p class="product-category">Women</p>
+                            <p class="product-price">₹2,499</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="product-card">
+                    <a href="/products/oversized-blazer">
+                        <div class="product-img-wrap">
+                            <span class="badge-new">New</span>
+                            <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=600&q=80" alt="Oversized Blazer" loading="lazy">
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Oversized Blazer</h3>
+                            <p class="product-category">Women</p>
+                            <p class="product-price">₹4,499</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="product-card">
+                    <a href="/products/ribbed-knit-top">
+                        <div class="product-img-wrap">
+                            <span class="badge-new">New</span>
+                            <img src="https://images.unsplash.com/photo-1554568218-0f1715e72254?w=600&q=80" alt="Ribbed Knit Top" loading="lazy">
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Ribbed Knit Top</h3>
+                            <p class="product-category">Women</p>
+                            <p class="product-price">₹1,399</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="product-card">
+                    <a href="/products/merino-crewneck">
+                        <div class=" product-img-wrap">
+                            <span class="badge-new">New</span>
+                            <img src="https://images.unsplash.com/photo-1620799139834-6b8f844fbe61?w=600&q=80" alt="Merino Crewneck" loading="lazy">
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Merino Crewneck</h3>
+                            <p class="product-category">Men</p>
+                            <p class="product-price">₹2,799</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="product-card">
+                    <a href="/products/oversized-blazer">
+                        <div class="product-img-wrap">
+                            <span class="badge-new">New</span>
+                            <img src="https://rukminim2.flixcart.com/image/1920/1920/xif0q/television/w/x/e/ua32h4520fuxxl-samsung-original-imahgy3hmsqhygay.jpeg?q=90" alt="Oversized Blazer" loading="lazy">
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="34" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="4" y1="7" x2="22" y2="7"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Samsung Television</h3>
+                            <p class="product-category">Electronics</p>
+                            <p class="product-price">₹14,499</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="product-card">
+                    <a href="iphone.html">
+                        <div class=" product-img-wrap">
+                            <span class="badge-new">New</span>
+                            <img src="https://www.myimaginestore.com/media/catalog/product/cache/4a48ac28cbb6e9c41470e5be5a6d3043/i/p/iphone_17_black_pdp_image_position_1__en-in.jpg" alt="Apple iPhone 17" loading="lazy">
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="34" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="4" y1="7" x2="22" y2="7"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Apple iPhone 17</h3>
+                            <p class="product-category">Electronics</p>
+                            <p class="product-price">₹78,000</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="product-card">
+                    <a href="/products/oversized-blazer">
+                        <div class="product-img-wrap">
+                            <span class="badge-new">New</span>
+                            <img src="https://www.ikea.com/in/en/images/products/trotten-desk-white-anthracite__1012699_pe828978_s5.jpg?f=xl" alt="Oversized Blazer" loading="lazy"
+                                 style="width: 300px; height: 350px; object-fit: cover;" >
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="34" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="4" y1="7" x2="22" y2="7"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Ikea Table </h3>
+                            <p class="product-category">Furniture</p>
+                            <p class="product-price">₹15,999</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="product-card">
+                    <a href="/products/oversized-blazer">
+                        <div class="product-img-wrap">
+                            <span class="badge-new">New</span>
+                            <img src="https://m.media-amazon.com/images/I/51ljnEaW0pL._SL1000_.jpg" alt="Oversized Blazer" loading="lazy"
+                                 style="width: 300px; height: 350px; object-fit: cover;" >
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="34" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="4" y1="7" x2="22" y2="7"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Sony PlayStation 5 </h3>
+                            <p class="product-category">Electronics</p>
+                            <p class="product-price">₹55,000</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="product-card">
+                    <a href="/products/oversized-blazer">
+                        <div class="product-img-wrap">
+                            <span class="badge-new">New</span>
+                            <img src="https://levi.in/cdn/shop/files/236770367_01_Styleshot.jpg?v=1767769979" alt="Oversized Blazer" loading="lazy"
+                                 style="width: 300px; height: 350px; object-fit: cover;" >
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="34" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="4" y1="7" x2="22" y2="7"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Levi's Jeans</h3>
+                            <p class="product-category">Apparel</p>
+                            <p class="product-price">₹2,999 </p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="product-card">
+                    <a href="/products/oversized-blazer">
+                        <div class="product-img-wrap">
+                            <span class="badge-new">New</span>
+                            <img src="https://www.montecarlo.in/cdn/shop/files/1243323RN-2-38_1.jpg?v=1739274305&width=700" alt="Oversized Blazer" loading="lazy"
+                                 style="width: 300px; height: 350px; object-fit: cover;" >
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="34" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="4" y1="7" x2="22" y2="7"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name"> Monte Carlo Sweater</h3>
+                            <p class="product-category">Apparel</p>
+                            <p class="product-price">₹5,000 </p>
+                        </div>
+                    </a>
+                </article>
+
+
+                <article class="product-card">
+                    <a href="/products/oversized-blazer">
+                        <div class="product-img-wrap">
+                            <span class="badge-new">New</span>
+                            <img src="https://m.media-amazon.com/images/I/71jYctugZML._SX679_.jpg" alt="Oversized Blazer" loading="lazy"
+                                 style="width: 300px; height: 350px; object-fit: cover;" >
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="34" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="4" y1="7" x2="22" y2="7"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name"> Muscle Blaze Whey Protein </h3>
+                            <p class="product-category">Supplements</p>
+                            <p class="product-price">₹1,999 </p>
+                        </div>
+                    </a>
+                </article>
+
+
+
+                <article class="product-card">
+                    <a href="/products/oversized-blazer">
+                        <div class="product-img-wrap">
+                            <span class="badge-new">New</span>
+                            <img src="https://m.media-amazon.com/images/I/41WyX+E04cL._SY300_SX300_QL70_FMwebp_.jpg" alt="Oversized Blazer" loading="lazy"
+                                 style="width: 300px; height: 350px; object-fit: cover;" >
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="34" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="4" y1="7" x2="22" y2="7"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Samsung Galaxy s25 ultra </h3>
+                            <p class="product-category">Electronics</p>
+                            <p class="product-price">₹1,29,999 </p>
+                        </div>
+                    </a>
+                </article>
+
+
+                <article class="product-card">
+                    <a href="/products/samsung-galaxy-s25">
+                        <div class="product-img-wrap">
+                            <span class="badge-new">New</span>
+                            <img src="https://images.samsung.com/in/smartphones/galaxy-s25/images/galaxy-s25-highlights-color-icyblue.jpg" alt="Samsung Galaxy S25" loading="lazy">
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="34" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="4" y1="7" x2="22" y2="7"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Samsung Galaxy S25</h3>
+                            <p class="product-category">Electronics</p>
+                            <p class="product-price">₹74,999</p>
+                        </div>
+                    </a>
+                </article>
+
+
+                <article class="product-card">
+                    <a href="/products/sony-wh1000xm5">
+                        <div class="product-img-wrap">
+                            <img src="https://www.bhphotovideo.com/images/images2500x2500/sony_wh_1000xm5_b_wh_1000xm5_wireless_industry_leading_noise_canceling_1662885.jpg" alt="Sony WH-1000XM5" loading="lazy">
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="34" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="4" y1="7" x2="22" y2="7"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Sony WH-1000XM5</h3>
+                            <p class="product-category">Audio</p>
+                            <p class="product-price">₹29,990</p>
+                        </div>
+                    </a>
+                </article>
+
+
+                <article class="product-card">
+                    <a href="/products/apple-macbook-air-m3">
+                        <div class="product-img-wrap">
+                            <span class="badge-new">New</span>
+                            <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/macbook-air-midnight-config-20220606?wid=820&hei=498&fmt=jpeg&qlt=90&.v=1654122880566" alt="Apple MacBook Air M3" loading="lazy">
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="34" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="4" y1="7" x2="22" y2="7"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Apple MacBook Air M3</h3>
+                            <p class="product-category">Laptops</p>
+                            <p class="product-price">₹1,14,900</p>
+                        </div>
+                    </a>
+                </article>
+
+
+                <article class="product-card">
+                    <a href="/products/apple-airpods-pro-2">
+                        <div class="product-img-wrap">
+                            <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MQD83?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1660803972361" alt="Apple AirPods Pro 2" loading="lazy">
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="34" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="4" y1="7" x2="22" y2="7"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Apple AirPods Pro 2</h3>
+                            <p class="product-category">Audio</p>
+                            <p class="product-price">₹24,900</p>
+                        </div>
+                    </a>
+                </article>
+
+
+                <article class="product-card">
+                    <a href="/products/dell-xps-15">
+                        <div class="product-img-wrap">
+                            <img src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-15-9530/media-gallery/black/notebook-xps-15-9530-t-black-gallery-1.psd?fmt=pjpg&pscan=auto&scl=1&hei=402&wid=402&qlt=100,1&resMode=sharp2&size=402,402&chrss=full" alt="Dell XPS 15" loading="lazy">
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="34" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="4" y1="7" x2="22" y2="7"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Dell XPS 15</h3>
+                            <p class="product-category">Laptops</p>
+                            <p class="product-price">₹1,89,990</p>
+                        </div>
+                    </a>
+                </article>
+
+
+                <article class="product-card">
+                    <a href="/products/canon-eos-r50">
+                        <div class="product-img-wrap">
+                            <span class="badge-new">New</span>
+                            <img src="https://www.bhphotovideo.com/images/images2500x2500/canon_5811c022_eos_r50_mirrorless_camera_1715808.jpg" alt="Canon EOS R50" loading="lazy">
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="34" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="4" y1="7" x2="22" y2="7"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Canon EOS R50</h3>
+                            <p class="product-category">Cameras</p>
+                            <p class="product-price">₹64,999</p>
+                        </div>
+                    </a>
+                </article>
+
+
+                <article class="product-card">
+                    <a href="/products/oneplus-12">
+                        <div class="product-img-wrap">
+                            <img src="https://image01.oneplus.net/ebp/202312/07/1-m00-52-45-rblaqwvxd8wab2mlaadqk5mfufy562.png" alt="OnePlus 12" loading="lazy">
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="34" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="4" y1="7" x2="22" y2="7"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">OnePlus 12</h3>
+                            <p class="product-category">Electronics</p>
+                            <p class="product-price">₹64,999</p>
+                        </div>
+                    </a>
+                </article>
+
+
+                <article class="product-card">
+                    <a href="/products/apple-watch-series-10">
+                        <div class="product-img-wrap">
+                            <span class="badge-new">New</span>
+                            <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MQDY3ref_VW_34FR+watch-45-alum-midnight-nc-10s_VW_34FR_WF_CO?wid=750&hei=712&trim=1&fmt=p-jpg&qlt=95&.v=1683224544054" alt="Apple Watch Series 10" loading="lazy">
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="34" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="4" y1="7" x2="22" y2="7"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Apple Watch Series 10</h3>
+                            <p class="product-category">Wearables</p>
+                            <p class="product-price">₹46,900</p>
+                        </div>
+                    </a>
+                </article>
+
+
+                <article class="product-card">
+                    <a href="/products/lg-oled-c3-55">
+                        <div class="product-img-wrap">
+                            <img src="https://www.lg.com/us/images/tvs/md08003345/gallery/D-01.jpg" alt="LG OLED C3 55 inch" loading="lazy">
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="34" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="4" y1="7" x2="22" y2="7"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">LG OLED C3 55"</h3>
+                            <p class="product-category">Televisions</p>
+                            <p class="product-price">₹1,49,990</p>
+                        </div>
+                    </a>
+                </article>
+
+
+                <article class="product-card">
+                    <a href="/products/bose-soundlink-max">
+                        <div class="product-img-wrap">
+                            <span class="badge-new">New</span>
+                            <img src="https://assets.bose.com/content/dam/Bose_DAM/Web/consumer_electronics/global/products/speakers/soundlink_max/product_silo_images/soundlink-max-blue-dusk-PS.png/jcr:content/renditions/cq5dam.web.1280.1280.png" alt="Bose SoundLink Max" loading="lazy">
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="34" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="4" y1="7" x2="22" y2="7"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Bose SoundLink Max</h3>
+                            <p class="product-category">Audio</p>
+                            <p class="product-price">₹39,900</p>
+                        </div>
+                    </a>
+                </article>
+
+
+                <article class="product-card">
+                    <a href="/products/ipad-pro-m4">
+                        <div class="product-img-wrap">
+                            <span class="badge-new">New</span>
+                            <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/ipad-pro-finish-unselect-gallery-1-202405?wid=5120&hei=2880&fmt=p-jpg&qlt=95&.v=1713920820183" alt="iPad Pro M4" loading="lazy">
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="34" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="4" y1="7" x2="22" y2="7"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">iPad Pro M4 11"</h3>
+                            <p class="product-category">Tablets</p>
+                            <p class="product-price">₹99,900</p>
+                        </div>
+                    </a>
+                </article>
+
+
+                <article class="product-card">
+                    <a href="/products/google-pixel-9-pro">
+                        <div class="product-img-wrap">
+                            <img src="https://lh3.googleusercontent.com/Nu-G-z3X6-G7HlnXjbxYk4jI8ixRTLNK9EB8pcVBOE1aSMmTluwWfsMBgJxMqJD_Qk9KhUoS6EwdFMQMgjl-ZX8hh6yLqIWD" alt="Google Pixel 9 Pro" loading="lazy">
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="34" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="4" y1="7" x2="22" y2="7"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Google Pixel 9 Pro</h3>
+                            <p class="product-category">Electronics</p>
+                            <p class="product-price">₹1,09,999</p>
+                        </div>
+                    </a>
+                </article>
+
+
+                <article class="product-card">
+                    <a href="/products/nintendo-switch-oled">
+                        <div class="product-img-wrap">
+                            <img src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/ncom/en_US/switch/site-design-update/hardware/switch/nintendo-switch-oled-model-white-set/gallery/image01.jpg" alt="Nintendo Switch OLED" loading="lazy">
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="34" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="4" y1="7" x2="22" y2="7"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Nintendo Switch OLED</h3>
+                            <p class="product-category">Gaming</p>
+                            <p class="product-price">₹29,999</p>
+                        </div>
+                    </a>
+                </article>
+
+
+                <article class="product-card">
+                    <a href="/products/dyson-v15-detect">
+                        <div class="product-img-wrap">
+                            <img src="https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/394577-01.png?$responsive$&cropPathE=desktop&fit=stretch,1&wid=1440" alt="Dyson V15 Detect" loading="lazy">
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="34" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="4" y1="7" x2="22" y2="7"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Dyson V15 Detect</h3>
+                            <p class="product-category">Home Appliances</p>
+                            <p class="product-price">₹62,900</p>
+                        </div>
+                    </a>
+                </article>
+
+
+                <article class="product-card">
+                    <a href="/products/samsung-galaxy-tab-s9">
+                        <div class="product-img-wrap">
+                            <img src="https://images.samsung.com/in/tablets/galaxy-tab-s9/images/galaxy-tab-s9-highlights-design-beige.jpg" alt="Samsung Galaxy Tab S9" loading="lazy">
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="34" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="4" y1="7" x2="22" y2="7"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Samsung Galaxy Tab S9</h3>
+                            <p class="product-category">Tablets</p>
+                            <p class="product-price">₹72,999</p>
+                        </div>
+                    </a>
+                </article>
+
+
+                <article class="product-card">
+                    <a href="/products/logitech-mx-master-3s">
+                        <div class="product-img-wrap">
+                            <img src="https://resource.logitech.com/w_692,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/mx-master-3s/gallery/mx-master-3s-mouse-top-view-graphite.png?v=1" alt="Logitech MX Master 3S" loading="lazy">
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="34" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="4" y1="7" x2="22" y2="7"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Logitech MX Master 3S</h3>
+                            <p class="product-category">Accessories</p>
+                            <p class="product-price">₹9,995</p>
+                        </div>
+                    </a>
+                </article>
+
+
+                <article class="product-card">
+                    <a href="/products/gopro-hero12-black">
+                        <div class="product-img-wrap">
+                            <span class="badge-new">New</span>
+                            <img src="https://community.gopro.com/t5/image/serverpage/image-id/823002iF6F6B7FF4D9F4E8E/image-size/large?v=v2&px=999" alt="GoPro HERO12 Black" loading="lazy">
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="34" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="4" y1="7" x2="22" y2="7"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">GoPro HERO12 Black</h3>
+                            <p class="product-category">Cameras</p>
+                            <p class="product-price">₹39,500</p>
+                        </div>
+                    </a>
+                </article>
+
+
+                <article class="product-card">
+                    <a href="/products/ps5-slim">
+                        <div class="product-img-wrap">
+                            <img src="https://gmedia.playstation.com/is/image/SIEPDC/ps5-slim-disc-edition-white-01-en-14sep23?$native--t$" alt="PlayStation 5 Slim" loading="lazy">
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="34" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="4" y1="7" x2="22" y2="7"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">PlayStation 5 Slim</h3>
+                            <p class="product-category">Gaming</p>
+                            <p class="product-price">₹54,990</p>
+                        </div>
+                    </a>
+                </article>
+
+
+                <article class="product-card">
+                    <a href="/products/kindle-paperwhite-2024">
+                        <div class="product-img-wrap">
+                            <span class="badge-new">New</span>
+                            <img src="https://m.media-amazon.com/images/I/51JDfqMQyOL._AC_SX679_.jpg" alt="Kindle Paperwhite 2024" loading="lazy">
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="34" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="4" y1="7" x2="22" y2="7"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Kindle Paperwhite 2024</h3>
+                            <p class="product-category">E-Readers</p>
+                            <p class="product-price">₹14,999</p>
+                        </div>
+                    </a>
+                </article>
+
+
+                <article class="product-card">
+                    <a href="/products/asus-rog-zephyrus-g14">
+                        <div class="product-img-wrap">
+                            <img src="https://dlcdnwebimgs.asus.com/files/media/E5D855B0-6E13-4CA6-8DBD-F7CDFE9C89DA/v1/img/kv.jpg" alt="ASUS ROG Zephyrus G14" loading="lazy">
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="34" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="4" y1="7" x2="22" y2="7"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">ASUS ROG Zephyrus G14</h3>
+                            <p class="product-category">Laptops</p>
+                            <p class="product-price">₹1,59,990</p>
+                        </div>
+                    </a>
+                </article>
+
+
+                <article class="product-card">
+                    <a href="/products/samsung-65-qled-4k">
+                        <div class="product-img-wrap">
+                            <img src="https://images.samsung.com/in/tvs/qled-tv/qled-4k-q80c/images/qled-4k-q80c-qa65q80cauxxl-frontblack-497145584.jpg" alt="Samsung 65 QLED 4K" loading="lazy">
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="34" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="4" y1="7" x2="22" y2="7"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Samsung 65" QLED 4K</h3>
+                            <p class="product-category">Televisions</p>
+                            <p class="product-price">₹1,29,990</p>
+                        </div>
+                    </a>
+                </article>
+
+
+                <article class="product-card">
+                    <a href="/products/garmin-fenix-7">
+                        <div class="product-img-wrap">
+                            <img src="https://res.garmin.com/transform/image/upload/b_rgb:FFFFFF,c_pad,dpr_2.0,f_auto,h_400,q_auto,w_400/c_pad,h_400,w_400/v1/Product_Images/en/products/010-02540-01/v/cf-xl-010-02540-01-0?pgw=1" alt="Garmin Fenix 7" loading="lazy">
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="34" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="4" y1="7" x2="22" y2="7"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Garmin Fenix 7</h3>
+                            <p class="product-category">Wearables</p>
+                            <p class="product-price">₹69,990</p>
+                        </div>
+                    </a>
+                </article>
+
+
+                <article class="product-card">
+                    <a href="/products/mi-robot-vacuum-s10">
+                        <div class="product-img-wrap">
+                            <span class="badge-new">New</span>
+                            <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0/pms_1665642408.58543862.png" alt="Mi Robot Vacuum S10" loading="lazy">
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="34" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="4" y1="7" x2="22" y2="7"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Mi Robot Vacuum S10</h3>
+                            <p class="product-category">Home Appliances</p>
+                            <p class="product-price">₹19,999</p>
+                        </div>
+                    </a>
+                </article>
+
+
+                <article class="product-card">
+                    <a href="/products/nothing-phone-2a">
+                        <div class="product-img-wrap">
+                            <img src="https://in.nothing.tech/cdn/shop/files/Black_Front.png?v=1710152701&width=1000" alt="Nothing Phone 2a" loading="lazy">
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="34" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="4" y1="7" x2="22" y2="7"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Nothing Phone 2a</h3>
+                            <p class="product-category">Electronics</p>
+                            <p class="product-price">₹19,999</p>
+                        </div>
+                    </a>
+                </article>
+
+
+                <article class="product-card">
+                    <a href="/products/boAt-airdopes-141">
+                        <div class="product-img-wrap">
+                            <img src="https://www.boat-lifestyle.com/cdn/shop/files/Airdopes141_BOAtBlack.png?v=1695285213&width=1200" alt="boAt Airdopes 141" loading="lazy">
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="34" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="4" y1="7" x2="22" y2="7"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">boAt Airdopes 141</h3>
+                            <p class="product-category">Audio</p>
+                            <p class="product-price">₹1,299</p>
+                        </div>
+                    </a>
+                </article>
+
+
+                <article class="product-card">
+                    <a href="/products/realme-gt-6">
+                        <div class="product-img-wrap">
+                            <span class="badge-new">New</span>
+                            <img src="https://image.realme.com/global/product-image/realme-gt6/Fluid-Silver-1.png" alt="Realme GT 6" loading="lazy">
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="34" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="4" y1="7" x2="22" y2="7"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Realme GT 6</h3>
+                            <p class="product-category">Electronics</p>
+                            <p class="product-price">₹34,999</p>
+                        </div>
+                    </a>
+                </article>
+
+
+                <article class="product-card">
+                    <a href="/products/jbl-charge-5">
+                        <div class="product-img-wrap">
+                            <img src="https://www.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw3e8ef82c/JBL_CHARGE5_SQUAD_012_x1_1605x1605px.png?sw=592&sh=592&sm=fit&sfrm=png" alt="JBL Charge 5" loading="lazy">
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="34" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="4" y1="7" x2="22" y2="7"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">JBL Charge 5</h3>
+                            <p class="product-category">Audio</p>
+                            <p class="product-price">₹16,999</p>
+                        </div>
+                    </a>
+                </article>
+
+
+                <article class="product-card">
+                    <a href="/products/hp-envy-x360">
+                        <div class="product-img-wrap">
+                            <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/knac/c08167690.png" alt="HP Envy x360" loading="lazy">
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="34" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="4" y1="7" x2="22" y2="7"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">HP Envy x360 14</h3>
+                            <p class="product-category">Laptops</p>
+                            <p class="product-price">₹89,990</p>
+                        </div>
+                    </a>
+                </article>
+
+
+                <article class="product-card">
+                    <a href="/products/philips-hue-starter-kit">
+                        <div class="product-img-wrap">
+                            <img src="https://www.assets.signify.com/is/image/PhilipsLighting/fp927400450U-001?wid=1000&hei=1000&fit=fit,1" alt="Philips Hue Starter Kit" loading="lazy">
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="34" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="4" y1="7" x2="22" y2="7"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Philips Hue Starter Kit</h3>
+                            <p class="product-category">Smart Home</p>
+                            <p class="product-price">₹9,999</p>
+                        </div>
+                    </a>
+                </article>
+
+
+                <article class="product-card">
+                    <a href="/products/dji-mini-4-pro">
+                        <div class="product-img-wrap">
+                            <span class="badge-new">New</span>
+                            <img src="https://dji-official-fe.djicdn.com/dps/5c88cfcc1a5b3ee4faeadb4abca80aee.png" alt="DJI Mini 4 Pro" loading="lazy">
+                            <div class="card-actions"><button class="add-bag-btn"><svg width="34" height="23" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="4" y1="7" x2="22" y2="7"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Quick Add</button></div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">DJI Mini 4 Pro</h3>
+                            <p class="product-category">Drones</p>
+                            <p class="product-price">₹74,999</p>
+                        </div>
+                    </a>
+                </article>
+
+            </div>
+        </div>
+    </section>
+</main>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">OneKart</div>
+                <p>Your one-stop online store for fashion, electronics, and everyday essentials with secure checkout and fast delivery.</p>
+            </div>
+            <div class="footer-col">
+                <p class="footer-col-title">Shop</p>
+                <ul>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Women's Collection</a></li>
+                    <li><a href="#">Men's Collection</a></li>
+                    <li><a href="#">Accessories</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <p class="footer-col-title">Help</p>
+                <ul>
+                    <li><a href="#">FAQ &amp; Contact</a></li>
+                    <li><a href="#">Shipping &amp; Returns</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">Track Order</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>© 2026 OneKart. All rights reserved.</span>
+        <div>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+    </div>
+    </div>
+</footer>
+<script src = "../javascript/index.js"></script>
+</body>
+</html>
