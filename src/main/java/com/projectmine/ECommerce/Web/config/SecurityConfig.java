@@ -28,6 +28,7 @@ public class SecurityConfig {
                                 "/css/styles.css",
                                 "/css/new.css",
                                 "/css/electronics.css",
+                                "/css/auth.css",
                                 "/javascript/register.js",
                                 "/javascript/login.js",
                                 "/javascript/index.js",

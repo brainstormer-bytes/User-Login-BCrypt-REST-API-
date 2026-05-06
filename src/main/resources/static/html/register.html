@@ -3,20 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <title>Register</title>
+
+    <link rel="stylesheet" href="../css/auth.css">
 </head>
-<body>
-<h2><b>Register</b></h2>
-<br>
-<div>
-        <p id = "message"></p>
-        <label for = "userName">Name : </label>
-        <input type = "text" name = "username" id = "userName" placeholder = "Enter your name" required><br><br>
-        <label for = "email1">Email : </label>
-        <input type = "email" name = "email" id = "email1" placeholder = "Enter your email id" required><br><br>
-        <label for = "password1">Create Password : </label>
-        <input type = "password" name = "password" id = "password1" placeholder = "Create a new password" required><br><br>
-        <button type = "button" onclick = "register()">Submit</button>
-</div>
-<script src = "../javascript/register.js"></script>
+<body class="auth-page">
+<main class="auth-shell">
+    <aside class="auth-aside">
+        <div class="auth-brand">OneKart</div>
+        <div class="auth-copy">
+            <div class="auth-eyebrow">Create account</div>
+            <h1>Register in the same understated style.</h1>
+            <p>Welcome To The Shop Where One Finds All</p>
+        </div>
+        <div class="auth-note">Simple onboarding for new shoppers</div>
+    </aside>
+
+    <section class="auth-panel">
+        <h2>Register</h2>
+        <p>Set up your profile to get started.</p>
+
+        <div class="auth-form">
+            <p id="message" class="auth-message"></p>
+
+            <div class="field-group">
+                <label for="userName">Name</label>
+                <input type="text" name="username" id="userName" placeholder="Enter your name" required>
+            </div>
+
+            <div class="field-group">
+                <label for="email1">Email</label>
+                <input type="email" name="email" id="email1" placeholder="Enter your email id" required>
+            </div>
+
+            <div class="field-group">
+                <label for="password1">Create Password</label>
+                <input type="password" name="password" id="password1" placeholder="Create a new password" required>
+            </div>
+
+            <button class="auth-submit" type="button" onclick="register()">Submit</button>
+        </div>
+
+        <p class="auth-switch">Already registered? <a href="login.html">Login here</a></p>
+    </section>
+</main>
+<script src="../javascript/register.js"></script>
 </body>
 </html>
