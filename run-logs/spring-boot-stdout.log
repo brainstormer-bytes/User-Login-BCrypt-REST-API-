@@ -1771,3 +1771,39 @@ java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatem
 2026-05-06T05:50:46.485+05:30 DEBUG 24164 --- [ECommerce-Web] [nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
 2026-05-06T05:50:46.486+05:30 DEBUG 24164 --- [ECommerce-Web] [nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{message=Invalid credentails, success=false}]
 2026-05-06T05:50:46.489+05:30 DEBUG 24164 --- [ECommerce-Web] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 401 UNAUTHORIZED
+2026-05-06T05:53:19.048+05:30 DEBUG 24164 --- [ECommerce-Web] [nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/user/login", parameters={}
+2026-05-06T05:53:19.048+05:30 DEBUG 24164 --- [ECommerce-Web] [nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.projectmine.ECommerce.Web.controller.LoginController#handleForm(User, HttpSession)
+2026-05-06T05:53:19.052+05:30 DEBUG 24164 --- [ECommerce-Web] [nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [User{email='yashvardhan241108@gmail.com', name='null', password='1234567890'}]
+User{email='yashvardhan241108@gmail.com', name='null', password='1234567890'}
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "con" is null
+2026-05-06T05:53:19.058+05:30 DEBUG 24164 --- [ECommerce-Web] [nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-06T05:53:19.061+05:30 DEBUG 24164 --- [ECommerce-Web] [nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{message=Invalid credentails, success=false}]
+2026-05-06T05:53:19.063+05:30 DEBUG 24164 --- [ECommerce-Web] [nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 401 UNAUTHORIZED
+2026-05-06T06:07:07.791+05:30 DEBUG 24164 --- [ECommerce-Web] [nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/user/login", parameters={}
+2026-05-06T06:07:07.791+05:30 DEBUG 24164 --- [ECommerce-Web] [nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.projectmine.ECommerce.Web.controller.LoginController#handleForm(User, HttpSession)
+2026-05-06T06:07:07.807+05:30 DEBUG 24164 --- [ECommerce-Web] [nio-8081-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [User{email='yashvardhan241108@gmail.com', name='null', password='1234567890'}]
+User{email='yashvardhan241108@gmail.com', name='null', password='1234567890'}
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "con" is null
+2026-05-06T06:07:07.823+05:30 DEBUG 24164 --- [ECommerce-Web] [nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-06T06:07:07.823+05:30 DEBUG 24164 --- [ECommerce-Web] [nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{message=Invalid credentails, success=false}]
+2026-05-06T06:07:07.823+05:30 DEBUG 24164 --- [ECommerce-Web] [nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 401 UNAUTHORIZED
+2026-05-06T06:07:09.251+05:30 DEBUG 24164 --- [ECommerce-Web] [nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/html/register.html", parameters={}
+2026-05-06T06:07:09.260+05:30 DEBUG 24164 --- [ECommerce-Web] [nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-05-06T06:07:09.268+05:30 DEBUG 24164 --- [ECommerce-Web] [nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-06T06:07:09.331+05:30 DEBUG 24164 --- [ECommerce-Web] [nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/css/auth.css", parameters={}
+2026-05-06T06:07:09.331+05:30 DEBUG 24164 --- [ECommerce-Web] [nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-05-06T06:07:09.331+05:30 DEBUG 24164 --- [ECommerce-Web] [nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/javascript/register.js", parameters={}
+2026-05-06T06:07:09.341+05:30 DEBUG 24164 --- [ECommerce-Web] [nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-05-06T06:07:09.349+05:30 DEBUG 24164 --- [ECommerce-Web] [nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-06T06:07:09.349+05:30 DEBUG 24164 --- [ECommerce-Web] [nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-06T06:07:09.518+05:30 DEBUG 24164 --- [ECommerce-Web] [nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/session-check", parameters={}
+2026-05-06T06:07:09.518+05:30 DEBUG 24164 --- [ECommerce-Web] [nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.projectmine.ECommerce.Web.controller.Session_CheckController#sessionCheck(HttpSession)
+2026-05-06T06:07:09.527+05:30 DEBUG 24164 --- [ECommerce-Web] [nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-06T06:07:09.528+05:30 DEBUG 24164 --- [ECommerce-Web] [nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{loggedIn=false}]
+2026-05-06T06:07:09.532+05:30 DEBUG 24164 --- [ECommerce-Web] [nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 401 UNAUTHORIZED
