@@ -7,17 +7,16 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class LoginService {
-
+    static final BCryptPasswordEncoder hashPass = new BCryptPasswordEncoder(10);
 
     LoginRepository repo;
-    public LoginService (LoginRepository repo){
+    public LoginService(LoginRepository repo){
         this.repo = repo;
     }
 
 
     public boolean authenticate(String email, String password) {
         User u = repo.getUserDetails(email);
-        BCryptPasswordEncoder hashPass = new BCryptPasswordEncoder(10);
         boolean isPass = hashPass.matches(password, u.getPassword());
         if(isPass && email.equals(u.getEmail())) {
             return true;

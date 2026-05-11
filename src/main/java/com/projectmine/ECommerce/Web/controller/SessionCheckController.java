@@ -10,7 +10,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api")
-public class Session_CheckController {
+public class SessionCheckController {
 
     @RequestMapping("/session-check")
     public ResponseEntity<?> sessionCheck(HttpSession session) {

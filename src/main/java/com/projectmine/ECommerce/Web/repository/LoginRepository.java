@@ -16,7 +16,7 @@ public class LoginRepository {
         ResultSet rs = null;
         try {
             String query = "Select * From User Where email = ?";
-            databaseConnection db = new databaseConnection();
+            DatabaseConnection db = new DatabaseConnection();
             con = db.connect();
             st = con.prepareStatement(query);
             st.setString(1,email);
