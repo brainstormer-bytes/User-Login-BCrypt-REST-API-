@@ -3,21 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/auth.css">
 </head>
-<body>
-<h2><b>Login</b></h2>
-<br>
-<div>
-        <p id = "message"></p>
-        <label for = "email2">Email : </label>
-        <input type = "email" name = "email" id = "email2" placeholder = "Confirm email" required><br><br>
-        <label for = "password2">Password : </label>
-        <input type = "password" name = "password" id = "password2" placeholder = "Confirm password" required><br><br>
-        <button type = "button" onclick = "login()">Submit</button>
-</div>
+<body class="auth-page">
+<main class="auth-shell">
+    <aside class="auth-aside">
+        <div class="auth-brand">OneKart</div>
+        <div class="auth-copy">
+            <div class="auth-eyebrow">Welcome back</div>
+            <h1>Login.</h1>
+            <p>Quiet access to your account.</p>
+        </div>
+        <div class="auth-note">OneKart account</div>
+    </aside>
+
+    <section class="auth-panel">
+        <h2>Login</h2>
+        <p>Enter your details.</p>
+
+        <div class="auth-form">
+            <p id="message" class="auth-message"></p>
+
+            <div class="field-group">
+                <label for="email2">Email</label>
+                <input type="email" name="email" id="email2" placeholder="Confirm email" required>
+            </div>
+
+            <div class="field-group">
+                <label for="password2">Password</label>
+                <input type="password" name="password" id="password2" placeholder="Confirm password" required>
+            </div>
+
+            <button class="auth-submit" type="button" onclick="login()">Login</button>
+        </div>
+
+        <p class="auth-switch">Need an account? <a href="register.html">Register here</a></p>
+    </section>
+</main>
 <script src="../javascript/login.js"></script>
 </body>
-<footer>
-    <pre> Haven't created an account? <a href = "register.html">Register Here</a>  </pre>
-</footer>
 </html>

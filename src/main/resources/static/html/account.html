@@ -1,19 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Account - OneKart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-<h3><b>Welcome to Accounts page</b></h3>
-<div id="account-content">
-    <h2>My Account</h2>
-    <br>
-    <p><strong>Name : </strong><span id="display-name"></span></p>
-    <p><strong>Email : </strong><span id="display-email"></span></p>
-    <br>
-    <button onclick="logout()">Logout</button>
-</div>
+<nav id="main-nav">
+    <a href="index.html" class="nav-logo" aria-label="OneKart home">OneKart</a>
+    <ul class="nav-links" role="list">
+        <li><a href="new.html">New In</a></li>
+        <li><a href="women.html">Women</a></li>
+        <li><a href="men.html">Men</a></li>
+        <li><a href="electronics.html">Electronics</a></li>
+        <li><a href="sale.html">Sale</a></li>
+    </ul>
+    <div class="nav-actions">
+        <a class="nav-icon" href="index.html" aria-label="Back to home">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M15 18l-6-6 6-6"/>
+            </svg>
+        </a>
+        <button class="nav-icon account-chip" id="account-btn" aria-label="Account">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+            </svg>
+            <span>Account</span>
+        </button>
+    </div>
+</nav>
+
+<main class="account-main">
+    <section class="account-hero container" aria-label="Account introduction">
+        <p class="catalog-eyebrow">OneKart Profile</p>
+        <h1>Account overview</h1>
+        <p>Your OneKart details, presented with the same quiet, minimal look as the rest of the storefront.</p>
+    </section>
+
+    <section class="account-section container" aria-label="Account details">
+        <div id="account-content" class="account-card" style="display: none;">
+            <div class="account-card-top">
+                <div>
+                    <p class="account-label">Welcome</p>
+                    <h2>My Account</h2>
+                </div>
+                <button class="account-logout" type="button" onclick="logout()">Logout</button>
+            </div>
+
+            <div class="account-grid">
+                <article class="account-detail">
+                    <p class="account-detail-label">Name</p>
+                    <p class="account-detail-value" id="display-name"></p>
+                </article>
+                <article class="account-detail">
+                    <p class="account-detail-label">Email</p>
+                    <p class="account-detail-value" id="display-email"></p>
+                </article>
+            </div>
+
+            <div class="account-note">
+                <p>Signed in to OneKart with an active secure session.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">OneKart</div>
+                <p>Your one-stop online store for fashion, electronics, and everyday essentials with secure checkout and fast delivery.</p>
+            </div>
+            <div class="footer-col">
+                <p class="footer-col-title">Shop</p>
+                <ul>
+                    <li><a href="new.html">New Arrivals</a></li>
+                    <li><a href="women.html">Women's Collection</a></li>
+                    <li><a href="men.html">Men's Collection</a></li>
+                    <li><a href="electronics.html">Electronics</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <p class="footer-col-title">Help</p>
+                <ul>
+                    <li><a href="#">FAQ &amp; Contact</a></li>
+                    <li><a href="#">Shipping &amp; Returns</a></li>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>&copy; 2026 OneKart. All rights reserved.</span>
+        <div>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+    </div>
+</footer>
+
 <script src="../javascript/account.js"></script>
 </body>
 </html>
