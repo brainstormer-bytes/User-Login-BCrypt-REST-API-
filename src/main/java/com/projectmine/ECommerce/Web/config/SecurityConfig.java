@@ -16,6 +16,7 @@ public class SecurityConfig {
                 .csrf(csrf -> csrf.disable())       // disable CSRF so POST from fetch() works
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(
+                                "/",
                                 "/html/register.html",
                                 "/html/login.html",
                                 "/html/index.html",
@@ -39,6 +40,9 @@ public class SecurityConfig {
                                 "/api/logout"
                         ).permitAll()
                         .anyRequest().authenticated()   // everything else requires login
+                )
+                .sessionManagement(session -> session
+                        .sessionFixation(sessionFixation -> sessionFixation.newSession())
                 )
                 .formLogin(form -> form.disable())  // disable Spring's built-in login page
                 .httpBasic(basic -> basic.disable());

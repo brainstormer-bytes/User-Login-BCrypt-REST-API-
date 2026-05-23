@@ -2,28 +2,27 @@ package com.projectmine.ECommerce.Web.service;
 
 import com.projectmine.ECommerce.Web.model.User;
 import com.projectmine.ECommerce.Web.repository.LoginRepository;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 @Service
 public class LoginService {
 
+    private final LoginRepository repo;
+    private final PasswordEncoder passwordEncoder;
 
-    LoginRepository repo;
-    public LoginService (LoginRepository repo){
+    public LoginService(LoginRepository repo, PasswordEncoder passwordEncoder) {
         this.repo = repo;
+        this.passwordEncoder = passwordEncoder;
     }
 
-
     public boolean authenticate(String email, String password) {
-        User u = repo.getUserDetails(email);
-        BCryptPasswordEncoder hashPass = new BCryptPasswordEncoder(10);
-        boolean isPass = hashPass.matches(password, u.getPassword());
-        if(isPass && email.equals(u.getEmail())) {
-            return true;
-        } else {
-            return false;
-        }
+        User user = repo.getUserDetails(email);
+        return user != null
+                && user.getEmail() != null
+                && user.getPassword() != null
+                && email.equalsIgnoreCase(user.getEmail())
+                && passwordEncoder.matches(password, user.getPassword());
     }
 
     public User getUser(String email) {

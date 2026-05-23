@@ -1,8 +1,9 @@
 package com.projectmine.ECommerce.Web.controller;
 
 import com.projectmine.ECommerce.Web.model.User;
+import com.projectmine.ECommerce.Web.service.AuthSessionService;
 import com.projectmine.ECommerce.Web.service.LoginService;
-import jakarta.servlet.http.HttpSession;
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -15,25 +16,27 @@ import java.util.Map;
 @RequestMapping("/api")
 public class LoginController {
 
-    LoginService service;
-    public LoginController(LoginService service) {
+    private final LoginService service;
+    private final AuthSessionService authSessionService;
+
+    public LoginController(LoginService service, AuthSessionService authSessionService) {
         this.service = service;
+        this.authSessionService = authSessionService;
     }
 
     @PostMapping("/user/login")
-    public ResponseEntity<?> handleForm(@RequestBody User u, HttpSession session) {
-        System.out.println(u.toString());
+    public ResponseEntity<?> handleForm(@RequestBody User u, HttpServletRequest request) {
         String email = u.getEmail();
         String password = u.getPassword();
-        if(service.authenticate(email,password)) {
-            User u1 = service.getUser(email); //it returns name, email, password
-            session.setAttribute("userName", u1.getName());
-            session.setAttribute("userEmail", u1.getEmail());
-            return ResponseEntity.ok(Map.of("success",true,"name",u1.getName()));
-        } else {
-            return ResponseEntity
-                    .status(401)
-                    .body(Map.of("success",false,"message","Invalid credentails"));
+        if (service.authenticate(email, password)) {
+            User authenticatedUser = service.getUser(email);
+            authSessionService.startFreshSession(request, authenticatedUser);
+            return ResponseEntity.ok(Map.of("success", true, "name", authenticatedUser.getName()));
         }
+
+        authSessionService.retireCurrentSession(request);
+        return ResponseEntity
+                .status(401)
+                .body(Map.of("success", false, "message", "Invalid credentials"));
     }
 }
