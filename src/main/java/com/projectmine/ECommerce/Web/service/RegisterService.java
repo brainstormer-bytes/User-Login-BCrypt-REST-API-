@@ -140,7 +140,7 @@ public class RegisterService {
     public boolean isDomain(String domain){
         if(domain == null) return false;
 
-        String domainList[] = {"example","gmail","email"};
+        String domainList[] = {"example","gmail","email","yahoo","outlook"};
         boolean flag = true;
         for(int i = 0; i < domainList.length;i++){
             if(domain.equals(domainList[i])){
@@ -156,7 +156,7 @@ public class RegisterService {
     public boolean isTdl(String tdl){
         if(tdl == null) return false;
 
-        String tdlList[] = {"com","net","org"};
+        String tdlList[] = {"com","net","org","in","co.in","edu","io","hotmail","icloud"};
         boolean flag = true;
         for(int i = 0; i < tdlList.length;i++){
             if(tdl.equals(tdlList[i])){
