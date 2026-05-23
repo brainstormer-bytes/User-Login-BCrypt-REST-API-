@@ -13,7 +13,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api")
-public class Session_CheckController {
+public class SessionCheckController {
 
     private final AuthSessionService authSessionService;
 

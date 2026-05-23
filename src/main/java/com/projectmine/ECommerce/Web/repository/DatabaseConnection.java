@@ -5,13 +5,13 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.util.Properties;
 
-public class databaseConnection {
+public class DatabaseConnection {
     Connection con = null;
     public Connection connect() {
         try {
 
             //Step1: Load the db.properties file from classPath
-            InputStream input = databaseConnection.class.getClassLoader().getResourceAsStream("application.properties");
+            InputStream input = DatabaseConnection.class.getClassLoader().getResourceAsStream("application.properties");
 
             //Step2: Read the properties
             Properties prop = new Properties();
